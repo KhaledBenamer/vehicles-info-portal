@@ -1,8 +1,9 @@
 @import '../common';
 
 .navbar {
-  height: 6.5rem;
-  background-color: $primaryColor;
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+  //background-color: $primaryColor;
   padding: 1rem;
 
   .nav-links,
@@ -11,14 +12,35 @@
   }
 
   .logo {
-    color: $lightTextColor;
-    margin-right: 50%;
+    
+    margin-right: 10%;
+
+    h1 {
+      a {
+        cursor: pointer;
+        color: $primaryColor;
+        font-size: 1.6rem;
+        text-decoration: none;  
+      }
+      
+    }
   }
 
   .nav-links {
-    span {
-      color: $lightTextColor;
-      font-size: 1.6rem;
+    ul {
+      
+      li {
+        display: inline-block;
+        
+        a {
+          cursor: pointer;
+          color: $primaryColor;
+          font-size: 1.25rem;
+          text-decoration: none;
+          padding: 0 0.75rem;
+
+        }
+      }
     }
   }
 }
