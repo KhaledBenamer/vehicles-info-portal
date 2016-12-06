@@ -3,8 +3,9 @@
 .navbar {
   background-color: #f8f8f8;
   border-color: #e7e7e7;
-  //background-color: $primaryColor;
-  padding: 1rem;
+  border-radius: 5px;
+  padding: 0.05rem 2rem;
+  margin-top: 1rem;
 
   .nav-links,
   .logo {
@@ -31,13 +32,21 @@
       
       li {
         display: inline-block;
-        
+        //padding: 2rem 0.75rem;
+        :hover {
+            background-color: #f3f3f3;
+
+        }
+
         a {
           cursor: pointer;
           color: $primaryColor;
-          font-size: 1.25rem;
+          font-size: 1rem;
           text-decoration: none;
-          padding: 0 0.75rem;
+          //margin: 0 0.8rem; 
+          padding: 2rem 0.75rem;
+
+
 
         }
       }
