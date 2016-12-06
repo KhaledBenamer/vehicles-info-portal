@@ -2,19 +2,19 @@ import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import Common from './common/common';
 import Components from './components/components';
+import HomeComponent from './pages/home/home';
+import VechInfoService from './services/VechInfoService';
 import AppComponent from './app.component';
 import 'normalize.css';
 
 angular.module('app', [
     uiRouter,
     Common,
-    Components
+    Components,
+    HomeComponent
   ])
   .config(($locationProvider, $stateProvider, $urlRouterProvider) => {
     "ngInject";
-    // @see: https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions
-    // #how-to-configure-your-server-to-work-with-html5mode
-    $locationProvider.html5Mode(true).hashPrefix('!');
 
     // The app routing is defined here. We will keep our layout inside the app component
     // The layout route will be abstract and it will hold all of the views
@@ -28,7 +28,7 @@ angular.module('app', [
       // Dashboard page to contain our vehicles info. list page
       .state('app.home', {
         url: '/home',
-        template: 'Home Paes'
+        template: '<home></home>'
       })
 
       // Vechiles info search page
@@ -48,4 +48,5 @@ angular.module('app', [
     $urlRouterProvider.otherwise('/app/home');
   })
 
-  .component('app', AppComponent);
+  .component('app', AppComponent)
+  .factory('VechInfoService', VechInfoService);
