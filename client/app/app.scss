@@ -1,6 +1,8 @@
 @import 'common/common';
 
 .app {
+  width: 85%;
+  margin: auto;
   height: 100%;
-  background-color: $lightBgColor;
+  background-color: #fff; //$lightBgColor;
 }
