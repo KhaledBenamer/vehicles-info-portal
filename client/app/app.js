@@ -3,7 +3,8 @@ import uiRouter from 'angular-ui-router';
 import Common from './common/common';
 import Components from './components/components';
 import HomeComponent from './pages/home/home';
-import VechInfoService from './services/VechInfoService';
+
+import VechilesInfoService from './services/VechilesInfoService';
 import AppComponent from './app.component';
 import 'normalize.css';
 
@@ -49,4 +50,4 @@ angular.module('app', [
   })
 
   .component('app', AppComponent)
-  .factory('VechInfoService', VechInfoService);
+  .factory('VechilesInfoService', VechilesInfoService);
