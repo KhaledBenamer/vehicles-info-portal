@@ -1,22 +1,18 @@
-const INIT = new WeakMap();
-const SERVICE = new WeakMap();
-const TIMEOUT = new WeakMap();
-
 class VechilesListingController {
   constructor(VechilesInfoService) {
   	"ngInject";
-  	this.name = 'VechilesInfoService';
-    SERVICE.set(this, VechilesInfoService);
-    //TIMEOUT.set(this, $timeout);
-    INIT.set(this, (text) => {
-      SERVICE.get(this).getVechiles().then(vechiles => {
-      	console.log("I am on Init" + text.name);
-        console.log(vechiles.makes);
-        this.vechiles = vechiles.makes[0];
+  	this.name = 'Vechiles Info. Portal';
+    this.VechilesInfoService = VechilesInfoService;
+    this.vechiles = '';
+  }
+
+  $onInit(){
+    this.VechilesInfoService.getVechiles({makes: 'makes', state: 'used', year: '2014', view: 'basic', fmt: 'json', api_key: 'mnequvu6w5rd2ujk59j794bv'}).then(vechiles => {
+        console.log("I got vechiles");
+        console.log(vechiles);
+        this.vechiles = vechiles;
         console.log(this.vechiles);
-      });
-    });
-    INIT.get(this)({name:"Khaled"});
+      }); 
   }
 }
 export default VechilesListingController;
