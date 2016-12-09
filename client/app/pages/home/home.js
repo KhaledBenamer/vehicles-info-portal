@@ -1,10 +1,10 @@
 import angular from 'angular';
 //import uiRouter from 'angular-ui-router';
 import homeComponent from './home.component';
-import VechListingComponent from '../../containers/vechilesListing/vechilesListing';
+import vehiclesListingComponent from '../../containers/vehiclesListing/vehiclesListing';
 
 let homeModule = angular.module('home', [
-	VechListingComponent,
+	vehiclesListingComponent,
 ])
 .component('home', homeComponent).name;
 

@@ -4,7 +4,7 @@ import Common from './common/common';
 import Components from './components/components';
 import HomeComponent from './pages/home/home';
 
-import VechilesInfoService from './services/VechilesInfoService';
+import vehiclesInfoService from './services/vehiclesInfoService';
 import AppComponent from './app.component';
 import 'normalize.css';
 
@@ -50,4 +50,4 @@ angular.module('app', [
   })
 
   .component('app', AppComponent)
-  .factory('VechilesInfoService', VechilesInfoService);
+  .factory('vehiclesInfoService', vehiclesInfoService);

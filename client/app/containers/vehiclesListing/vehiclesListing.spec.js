@@ -1,16 +1,16 @@
-import VechilesListingModule from './vechilesListing'
-import VechilesListingController from './vechilesListing.controller';
-import VechilesListingComponent from './vechilesListing.component';
-import VechilesListingTemplate from './vechilesListing.html';
+import VehiclesListingModule from './vehiclesListing'
+import VehiclesListingController from './vehiclesListing.controller';
+import VehiclesListingComponent from './vehiclesListing.component';
+import VehiclesListingTemplate from './vehiclesListing.html';
 
-describe('VechilesListing', () => {
+describe('VehiclesListing', () => {
   let $rootScope, makeController;
 
-  beforeEach(window.module(VechilesListingModule));
+  beforeEach(window.module(VehiclesListingModule));
   beforeEach(inject((_$rootScope_) => {
     $rootScope = _$rootScope_;
     makeController = () => {
-      return new VechilesListingController();
+      return new VehiclesListingController();
     };
   }));
 
@@ -30,20 +30,20 @@ describe('VechilesListing', () => {
     // template specs
     // tip: use regex to ensure correct bindings are used e.g., {{  }}
     it('has name in template [REMOVE]', () => {
-      expect(VechilesListingTemplate).to.match(/{{\s?\$ctrl\.name\s?}}/g);
+      expect(VehiclesListingTemplate).to.match(/{{\s?\$ctrl\.name\s?}}/g);
     });
   });
 
   describe('Component', () => {
       // component/directive specs
-      let component = VechilesListingComponent;
+      let component = VehiclesListingComponent;
 
       it('includes the intended template',() => {
-        expect(component.template).to.equal(VechilesListingTemplate);
+        expect(component.template).to.equal(VehiclesListingTemplate);
       });
 
       it('invokes the right controller', () => {
-        expect(component.controller).to.equal(VechilesListingController);
+        expect(component.controller).to.equal(VehiclesListingController);
       });
   });
 });
