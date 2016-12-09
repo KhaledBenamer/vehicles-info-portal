@@ -1,0 +1,18 @@
+<div>
+
+   <div>
+      <h2>Vehicles Manfacturer: <span>{{vm.vehicles.name}}<span></h1>
+	</div>
+   <table style="width: 60%; margin-bottom: 20px;" border="2px" align="center">
+        <tr>
+            <th>Vehicle ID</th>
+            <th>Brand</th>
+            <th>Year</th>
+        </tr>
+        <tr ng-repeat= "vehicle in vm.vehicles.models">
+        	<td>{{vehicle.years[0].id}}</td>
+        	<td style="text-align: left; padding-left: 30px;"> {{vm.vehicles.name}}-{{vehicle.name}}</td>
+        	<td>{{vehicle.years[0].year}}</td>
+        </tr>
+    </table>
+</div>
