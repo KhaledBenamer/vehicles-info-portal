@@ -1,5 +1,19 @@
 .home {
-  width: 95%;
-  margin: auto;
+  width: 100%;
+  margin: 1.25rem auto;
   min-height: 410px;
+  text-align: center;
+  border-top: 2px solid #bdd084;
+  border-bottom: 2px solid #bdd084;
+  //border-radius: 5px;
+  background-color: #f8f8f8; //#fafafa;
+  color: #888;
+
+  h1 {
+  	background-color: #bdd084;
+  	color: #888;
+  	//border-radius: 10px;
+  	margin-right: 40px;
+  	margin-left: 20px;
+  }
 }
