@@ -5,7 +5,7 @@
   border: $borderColor solid green;
   //border-color: green;//$borderColor;
   border-radius: 5px;
-  padding: 0.05rem 2rem;
+  padding: 0 2rem 0.05rem;
   margin-top: 1rem;
   font-family: "Source Sans Pro",Verdana,sans-serif;
 
@@ -22,7 +22,7 @@
     h1 {
       a {
         cursor: pointer;
-        color: #1d6439;
+        color: #888; //#1d6439;
         //color: $primaryColor;
         font-size: $brandFontSize;
         text-decoration: none;  
@@ -36,7 +36,8 @@
       
       li {
         display: inline-block;
-        //padding: 2rem 0.75rem;
+        vertical-align: middle;
+        margin-bottom: 13px;
         :hover {
             background-color: $liHoverColor;
 
@@ -44,11 +45,11 @@
 
         a {
           cursor: pointer;
-          color: #1d6439;
+          color: #888; //#1d6439;
           //color: $primaryColor;
           text-decoration: none;
           padding: 2rem 0.75rem;
-
+          margin-bottom: 2px;
 
 
         }
