@@ -3,12 +3,12 @@
 .navbar {
   background-color: #fafafa; //$lightBgColor;
   border: $borderColor solid green;
-  //border-color: green;//$borderColor;
+  width: 89%;
   border-radius: 5px;
   padding: 0 2rem 0.05rem;
-  margin-top: 1rem;
+  margin: 20px auto;
   font-family: "Source Sans Pro",Verdana,sans-serif;
-
+  position: relative;
 
   .nav-links,
   .logo {

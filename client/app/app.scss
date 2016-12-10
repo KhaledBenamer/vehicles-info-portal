@@ -1,8 +1,12 @@
 @import 'common/common';
 
 .app {
+
   width: 85%;
   margin: auto;
   height: 100%;
   background-color: #fff; //$lightBgColor;
+  header {
+  	position: relative;
+  }
 }
