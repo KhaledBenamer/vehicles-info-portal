@@ -7,11 +7,14 @@ class vehiclesListingController {
   }
 
   $onInit(){
-    this.vehiclesInfoService.getVehicles({makes: 'makes', state: 'used', year: '2014', view: 'basic', fmt: 'json', api_key: 'mnequvu6w5rd2ujk59j794bv'}).then(vehicles => {
-        console.log("I got vechiles");
-        console.log(vehicles);
+    this.vehiclesInfoService.getVehicles({makes: 'Audi', state: 'used', year: '2014'}).then(vehicles => {
         this.vehicles = vehicles;
-        console.log(this.vehicles);
+      }); 
+  }
+
+  vehiclesSearch(searchInfo) {
+    return this.vehiclesInfoService.getVehicles({makes: searchInfo.model, state: searchInfo.state, year: searchInfo.year}).then(vehicles => {
+        this.vehicles = vehicles;
       }); 
   }
 }

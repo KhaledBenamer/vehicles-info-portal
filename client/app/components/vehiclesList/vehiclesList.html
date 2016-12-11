@@ -1,14 +1,20 @@
-<div class="vicListDic">      
-   <table style="width: 60%; margin-bottom: 20px; background-color: #fff; color: #000;"  border="2px" align="center">
+<div class="vicListDic">   
+<label>Search: <input ng-model="searchText"></label>   
+   <table style="width: 60%; margin-bottom: 20px; background-color: #fff;"  border="2px" align="center">
         <tr>
             <th>Vehicle ID</th>
             <th>Brand</th>
             <th>Year</th>
         </tr>
-        <tr ng-repeat= "vehicle in vm.vehicles.models">
+        <tr ng-repeat= "vehicle in vm.vehicles.models | filter:searchText">
         	<td>{{vehicle.years[0].id}}</td>
-        	<td style="text-align: left; padding-left: 30px;"> {{vm.vehicles.name}}-{{vehicle.name}}</td>
+        	<td style="text-align: left; padding-left: 30px;"> {{vm.vehicles.name}}-{{vehicle.id}}</td>
         	<td>{{vehicle.years[0].year}}</td>
+        </tr>
+        <tr ng-repeat= "vehicle in vm.vehicles.models | filter:searchText">
+            <td>{{vehicle.years[0].id}}</td>
+            <td style="text-align: left; padding-left: 30px;"> {{vm.vehicles.name}}-{{vehicle.id}}</td>
+            <td>{{vehicle.years[0].year}}</td>
         </tr>
     </table>
 </div>

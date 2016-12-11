@@ -4,9 +4,10 @@ import './vehiclesSearchForm.scss';
 
 let vehiclesSearchFormComponent = {
   restrict: 'E',
-  bindings: {
-  	vehiclesSearch: '&'
+  require: {
+    'parent': '^vehiclesListing',
   },
+  bindings: {},
   template,
   controller,
   controllerAs: 'vm'

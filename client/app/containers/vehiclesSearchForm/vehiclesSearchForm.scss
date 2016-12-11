@@ -13,33 +13,33 @@
 		label{
 			font-size: 18px;
             span {
-            	margin-left: 25px;
+            	margin-left: 15px;
             	&:first {
             		margin-left: 0;
             	}
             }
+
 			input {
+				border-radius: 5px;
+				font-size: 14px;
 				height: 17px;
 				padding: 5px;
 				vertical-align: middle;
-				border-radius: 5px;
-				font-size: 14px;
-				//padding: 10px 20px;
 				
-			} 
+				&.inModel {
+					width: 100px;
+				}
 
-			.inModel {
-				width: 120px;
-			}
-			.inYear {
-				width: 55px;
-				margin-right: 5px;
-			}
+				&.inYear {
+					width: 50px;
+					margin-right: 3px;
+				}	
+			} 
 
 			select {
 				font-size: 14px;
 				height: 33px;
-				padding: 5px;
+				padding: 3px;
 				vertical-align: middle;
 				border-radius: 5px;
 			} 
@@ -47,9 +47,10 @@
 		}
 
 		.submitbtn {
+			border-radius: 5px;
 			vertical-align: center;
 			height: 27px;
-			margin-left: 20px;
+			margin-left: 15px;
 		}
 	}
 }
