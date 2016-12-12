@@ -4,11 +4,11 @@
     border-color: $borderColor;
     border-radius: 5px;
     font-size: 12px;
-    color: $primaryColor;
+   //color: $primaryColor;
     line-height: 18px;
-    margin-bottom: 1rem;
+    margin: 1rem auto;
     padding: 1rem 3rem;
-
+    width: 87%;
     .copyright{
       display: inline-block;
       margin-right: 5rem;
@@ -22,7 +22,7 @@
       }
     }
 
-    .contactus {
+    .contactusFooter {
         display: inline-block;
         margin-right: 1rem;
     }

@@ -1,8 +1,11 @@
 @import 'common/common';
 
+$appBgColor: #ffffff;
+$appContainerWidth: 85%;
+
 .app {
-  width: 85%;
+  background-color: $appBgColor;
+  width: $appContainerWidth;
   margin: auto;
   height: 100%;
-  background-color: #fff; //$lightBgColor;
 }

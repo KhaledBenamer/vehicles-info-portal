@@ -1,0 +1,21 @@
+<div class="vSearchForm">
+<form class="vForm" role="form" ng-submit="vm.vSearch()">
+    <label>
+      <span>Model</span>
+      <input type="text" name="vModel" class="inModel" placeholder="Vehicle model" ng-model= "vm.vehiclesSearch.model" required>
+    </label>
+    <label>
+      <span>State</span>
+      <select name="vState" ng-model= "vm.vehiclesSearch.state" required>
+      <option value="">Please select </option>
+    	<option value="new">New</option>
+    	<option value="used">Used</option>
+  		</select>
+    </label>
+    <label>
+      <span>Year</span>
+      <input type="number" name="vYear" class="inYear"  min="1990" placeholder="Year" required ng-model = "vm.vehiclesSearch.year">
+    </label>
+    <button class="submitbtn">Submit</button>
+</form>
+</div>

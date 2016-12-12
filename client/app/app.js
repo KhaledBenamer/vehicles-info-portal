@@ -31,18 +31,15 @@ angular.module('app', [
         url: '/home',
         template: '<home></home>'
       })
-
-      // Vechiles info search page
-      .state('app.search', {
-        url: '/search',
-        template: 'Vechiles Search page'
-      })
-
-
-      // Vechiles info search page
+      // Vechiles info about page
       .state('app.about', {
         url: '/about',
         template: '<about></about>'
+      })
+      // Vechiles info contact page
+      .state('app.contact', {
+        url: '/contact',
+        template: '<contact></contact>'
       });
 
 

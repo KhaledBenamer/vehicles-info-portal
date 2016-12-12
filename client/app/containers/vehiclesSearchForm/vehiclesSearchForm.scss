@@ -1,0 +1,51 @@
+.vSearchForm {
+
+	width: 58%;
+	margin: 20px auto;
+
+	.vForm {
+		box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+		margin: 2px;
+		padding: 5px 0;
+
+		label{
+			font-size: 18px;
+            span {
+            	margin-left: 15px;
+            }
+
+			input {
+				border-radius: 5px;
+				font-size: 14px;
+				height: 17px;
+				padding: 5px;
+				vertical-align: middle;
+				
+				&.inModel {
+					width: 100px;
+				}
+
+				&.inYear {
+					width: 50px;
+					margin-right: 3px;
+				}	
+			} 
+
+			select {
+				font-size: 14px;
+				height: 33px;
+				padding: 3px;
+				vertical-align: middle;
+				border-radius: 5px;
+			} 
+			
+		}
+
+		.submitbtn {
+			border-radius: 5px;
+			height: 27px;
+			margin-left: 15px;
+			vertical-align: center;
+		}
+	}
+}

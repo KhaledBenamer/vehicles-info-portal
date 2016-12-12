@@ -1,6 +1,6 @@
 class AboutController {
   constructor() {
-    this.name = 'About';
+    this.name = 'About us page';
   }
 }
 
