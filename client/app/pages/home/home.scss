@@ -1,19 +1,19 @@
+
 .home {
-  width: 95%;
-  margin: 20px auto 27px;
-  height: 490px;
-  text-align: center;
-  border-top: 2px solid #bdd084;
+  background-color: #f8f8f8;
   border-bottom: 2px solid #bdd084;
-  background-color: #f8f8f8; //#fafafa;
+  border-top: 2px solid #bdd084;
   color: #888;
+  height: 490px;
+  margin: 20px auto 27px;
   overflow: auto;
-  //position: relative;
+  text-align: center;
+  width: 95%;
 
   h2 {
   	background-color: #bdd084;
-  	color: #888;
   	margin: 20px auto;
     width: 85%;
+    
   }
 }

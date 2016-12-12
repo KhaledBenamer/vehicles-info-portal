@@ -1,13 +1,11 @@
 @import 'common/common';
 
-.app {
+$appBgColor: #ffffff;
+$appContainerWidth: 85%;
 
-  width: 85%;
+.app {
+  background-color: $appBgColor;
+  width: $appContainerWidth;
   margin: auto;
   height: 100%;
-  background-color: #fff; //$lightBgColor;
-  header {
-  	position: relative;
-  }
-
 }
