@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center">
   <a href="http://courses.angularclass.com/courses/angular-2-fundamentals" target="_blank">
     <img width="438" alt="Angular 2 Fundamentals" src="https://cloud.githubusercontent.com/assets/1016365/17200649/085798c6-543c-11e6-8ad0-2484f0641624.png">
@@ -177,3 +178,9 @@ enjoy — **AngularClass**
 ##[AngularClass](https://angularclass.com)
 > Learn AngularJS, Angular 2, and Modern Web Development from the best.
 > Looking for corporate Angular training, want to host us, or Angular consulting? hello@angularclass.com
+=======
+# vehicles-info-portal
+This Project is used to implement an Frontend Web Application for listing Vechiles information from a backend system powered by  Edmunds.com, Inc
+
+The implementation of this project is based on AngularJS 1.5 framwork, HTML5, and SCSS
+>>>>>>> acd906161263ce1b8cd20c1fd85a9ef0dac8ed8d
